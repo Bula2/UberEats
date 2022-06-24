@@ -10,19 +10,24 @@
     <!--Стили-->
     <link rel="stylesheet" href="style/style.css">
     <link rel="stylesheet" href="style/pushkin_style.css">
+    <link rel="stylesheet" href="style/animate.css">
     <!--JS-->
     <script src="script/script.js" defer></script>
     <script src="https://kit.fontawesome.com/e56bee619f.js" crossorigin="anonymous"></script>
+    <script src="script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <title>UBER EATS</title>
 </head>
 <body>
 <div class="wrapper">
     <div class="content">
         <header>
-            <div class="logo">
+            <div class="logo wow fadeInLeft" data-wow-duration="2s">
                 <a href="index.html"><span class="uber">UBER</span><span class="eats">EATS</span></a>
             </div>
-            <div class="header_login">
+            <div class="header_login wow fadeInRight" data-wow-duration="2s">
                 <a href="index.html"><input type="button" value="Войти"></a>
                 <div class="dropdown not-close-basket">
                     <button onclick="basketDrop()" class="basket not-close-basket"><i class="fa-solid fa-bag-shopping not-close-basket"></i></button>
@@ -55,7 +60,7 @@
 
         <div class="pushkin_main">
             <h2>Закуски</h2>
-            <div id="pushkin_menu" class="row pushkin_menu">
+            <div id="pushkin_menu" class="wow bounceInUp row pushkin_menu" data-wow-duration="2s">
                 <div class="p_point col-xs-11 col-sm-12 col-md-12 col-lg-5">
                     <img src="pictures/13.png" alt="">
                     <h3><a href="#">Сельд на бородинском хлебе</a></h3>

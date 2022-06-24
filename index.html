@@ -9,19 +9,24 @@
     <link rel="stylesheet" href="https://unpkg.com/flexboxgrid2@7.2.1/flexboxgrid2.min.css">
     <!--Стили-->
     <link rel="stylesheet" href="style/style.css">
+    <link rel="stylesheet" href="style/animate.css">
     <!--JS-->
     <script src="script/script.js" defer></script>
     <script src="https://kit.fontawesome.com/e56bee619f.js" crossorigin="anonymous"></script>
+    <script src="script/wow.min.js"></script>
+    <script>
+        new WOW().init();
+    </script>
     <title>UBER EATS</title>
 </head>
 <body>
 <div class="wrapper">
     <div class="content">
         <header>
-            <div class="logo">
+            <div class="logo wow fadeInLeft" data-wow-duration="2s">
                 <a href="index.html"><span class="uber">UBER</span><span class="eats">EATS</span></a>
             </div>
-            <div class="header_login">
+            <div class="header_login wow fadeInRight" data-wow-duration="2s">
                 <a href="index.html"><input type="button" value="Войти"></a>
                 <div class="dropdown not-close-basket">
                     <button onclick="basketDrop()" class="basket not-close-basket"><i class="fa-solid fa-bag-shopping not-close-basket"></i></button>
@@ -42,8 +47,8 @@
 
         <div class="rest_menu">
             <h2>Рестораны в Москве</h2>
-            <div class="menu row">
-                <div class="point col-sm-8 col-md-4 col-lg-3">
+            <div class="wow bounceInUp menu row" data-wow-duration="2s">
+                <div class=" point col-sm-8 col-md-4 col-lg-3">
                     <img src="pictures/1.png" alt="Макдональдс" title="Макдональдс">
                     <h3><a href="pushkin.html">Макдональндс - Газетный</a></h3>
                     <div class="price">₽₽ • Бургеры</div>
@@ -85,7 +90,7 @@
                     <div class="time"> 25-35 мин</div>
                 </div>
 
-                <div class="point col-sm-8 col-md-4 col-lg-3">
+                <div class=" point col-sm-8 col-md-4 col-lg-3">
                     <img src="pictures/7.png" alt="Макдональдс" title="Макдональдс">
                     <h3><a href="pushkin.html">PIZZELOVE</a></h3>
                     <div class="price">₽₽ • Пицца</div>
